@@ -6,6 +6,12 @@ import urllib.request
 from Bio import SeqIO, Entrez
 import os
 import re
+'''
+Usage:
+    python download_data.py --save_dir {directory to save data, default is data}
+
+
+'''
 
 
 def url_to_json(url):
@@ -37,7 +43,7 @@ def download_sequenced_phages(page, page_size):
 def download_url(url, pth):
     urllib.request.urlretrieve(url, os.path.join(pth, url.split("/")[-1]))
 
-def main(pth):
+def main(pth, max_genome_length):
     if not os.path.isdir(pth):
         os.mkdir(pth)
 
@@ -62,20 +68,19 @@ def main(pth):
         if ii % 500 == 0 and ii != 0:
             print("\t\t{}/{}".format(ii, len(phages)))
 
-        try:
-            download_url(pg['fasta_file'], phage_pth)
-        except:
-            print("\t\t\tException on {}".format(pg['fasta_file']))
+        if max_genome_length is None or int(pg['genome_length']) < max_genome_length:
+            try:
+                download_url(pg['fasta_file'], phage_pth)
+            except:
+                print("\t\t\tException on {}".format(pg['fasta_file']))
 
     print("\tSucesfully downloaded {} fasta files".format(len(os.listdir(phage_pth))))
-
-
-
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--save_dir', default = "data/", help = "directory to store all the files")
-
+    parser.add_argument('--max_genome_length', type = int, default = None,
+                        help = "skips all phages w/ genomes longer than max_genome_length")
     args = parser.parse_args()
-    main(args.save_dir)
+    main(args.save_dir, args.max_genome_length)
