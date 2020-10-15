@@ -9,8 +9,8 @@ import re
 '''
 Usage:
     python download_data.py --save_dir {directory to save data, default is data}
-
-
+        --max_genome_length {maximum genome length to download, some of the genomes are huge and were not
+                            used in jupyter notebook analysis}
 '''
 
 
