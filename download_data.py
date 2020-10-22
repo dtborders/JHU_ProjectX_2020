@@ -42,11 +42,17 @@ def main(save_dir, input_file, num_phages, num_hosts, email):
 
 
     for phage, phage_id in zip(phages_download, phages_ass):
+        phage_id = str(phage_id)
         if not os.path.isdir(os.path.join(phage_save_dir, phage_id)):
             os.mkdir(os.path.join(phage_save_dir, phage_id))
 
         genes = np.array([foo for foo in phage['GBSeq_feature-table'] if foo['GBFeature_key'] == 'gene'])
         whole_seq = phage['GBSeq_sequence']
+
+        gene_numbers = []
+        for gene in genes:
+            g_info = gene['GBFeature_intervals'][0]
+            gene_numbers.append([int(g_info['GBInterval_from']), int(g_info['GBInterval_to'])])
 
         sequences = SeqRecord(
             Seq(whole_seq),
@@ -56,7 +62,7 @@ def main(save_dir, input_file, num_phages, num_hosts, email):
         with open(os.path.join(phage_save_dir, str(phage_id), "{}.fasta".format(phage_id)), "w") as output_handle:
             SeqIO.write(sequences, output_handle, "fasta")
 
-        np.save(os.path.join(phage_save_dir, str(phage_id), "{}.npy".format(phage_id)), genes)
+        np.save(os.path.join(phage_save_dir, str(phage_id), "{}.npy".format(phage_id)), np.array(gene_numbers))
 
     # Download the Hosts
     print("Downloading Hosts")
@@ -65,54 +71,86 @@ def main(save_dir, input_file, num_phages, num_hosts, email):
         os.mkdir(host_save_dir)
 
     bac_to_download = bacterias if (num_hosts is None or num_hosts>=len(bacterias)) else bacterias[0:num_hosts]
+    handle = Entrez.efetch(db="nuccore", id=bac_to_download, rettype="gb", retmode="xml")
+    host_infos = Entrez.read(handle)
+    handle.close()
 
-    for host_id in bac_to_download:
-        print("downloading ", host_id)
+    for host_id, host_info in zip(bac_to_download, host_infos):
+
         host_id = host_id.split('.')[0]
-
         csvdir = os.path.join(host_save_dir, host_id)
-        if not os.path.isdir(csvdir):
-            os.mkdir(csvdir)
 
-        handle = Entrez.efetch(db="nuccore", id=host_id, rettype="fasta", retmode="xml")
-        sequence = Entrez.read(handle)
-        handle.close()
 
-        whole_seq = sequence[0]['TSeq_sequence']
+        #two cases to deal with, sometimes nuccore has all the data needed, others it doesnt
 
-        handle2 = Entrez.esearch(db="gene", term=host_id, retmax=100000, retmode="xml")
-        genes = Entrez.read(handle2)
-        handle2.close()
+        if 'GBSeq_sequence' in host_info.keys():
+            print("\tDownloading {} with path 1".format(host_id))
+            genes = np.array([foo for foo in host_info['GBSeq_feature-table'] if foo['GBFeature_key'] == 'gene'])
+            whole_seq = host_info['GBSeq_sequence']
+            gene_numbers = []
+            for gene in genes:
+                g_info = gene['GBFeature_intervals'][0]
+                gene_numbers.append([int(g_info['GBInterval_from']), int(g_info['GBInterval_to'])])
 
-        if len(genes['IdList']) == 0:
-            print("Error, could not find any genes on ncbi gene database associates w/ host id ", host_id)
-            continue
+            sequences = SeqRecord(
+                Seq(whole_seq),
+                id=host_id,
+                description="host dna",
+            )
 
-        handle3 = Entrez.efetch(db="gene", id=genes['IdList'], rettype='gene_table', retmode="xml")
-        gene_infos = Entrez.read(handle3, validate=False)
-        handle3.close()
+            if not os.path.isdir(csvdir):
+                os.mkdir(csvdir)
 
-        gene_locs = []
-        for ii, cres in enumerate(gene_infos):
-            #if host_id in cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1']:
-            if len(cres['Entrezgene_locus'])<2:
-                #print('here')
+            with open(os.path.join(csvdir, "{}.fasta".format(phage_id)), "w") as output_handle:
+                SeqIO.write(sequences, output_handle, "fasta")
+
+            np.save(os.path.join(csvdir, "{}.npy".format(phage_id)), np.array(gene_numbers))
+        else:
+            print("\tDownloading {} with path 2".format(host_id))
+
+            handle = Entrez.efetch(db="nuccore", id=host_id, rettype="fasta", retmode="xml")
+            sequence = Entrez.read(handle)
+            handle.close()
+
+            whole_seq = sequence[0]['TSeq_sequence']
+
+            handle2 = Entrez.esearch(db="gene", term=host_id, retmax=100000000, retmode="xml")
+            genes = Entrez.read(handle2)
+            handle2.close()
+
+            if len(genes['IdList']) == 0:
+                print("\t\tError, could not find any genes on ncbi gene database associates w/ host id ", host_id)
                 continue
-            seq_info = cres['Entrezgene_locus'][1]['Gene-commentary_seqs'][0]['Seq-loc_int']['Seq-interval']
-            gene_locs.append([seq_info['Seq-interval_to'], seq_info['Seq-interval_from']])
-            #else:
-            #    print(host_id, cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1'], 'invalid gene found')
+
+            handle3 = Entrez.efetch(db="gene", id=genes['IdList'], rettype='gene_table', retmode="xml")
+            gene_infos = Entrez.read(handle3, validate=False)
+            handle3.close()
+
+            gene_locs = []
+            for ii, cres in enumerate(gene_infos):
+                #if host_id in cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1']:
+                if len(cres['Entrezgene_locus'])<2:
+                    #print('here')
+                    continue
+                seq_info = cres['Entrezgene_locus'][1]['Gene-commentary_seqs'][0]['Seq-loc_int']['Seq-interval']
+                gene_locs.append([int(seq_info['Seq-interval_to']), int(seq_info['Seq-interval_from'])])
+                #else:
+                #    print(host_id, cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1'], 'invalid gene found')
 
 
-        sequences = SeqRecord(
-            Seq(whole_seq),
-            id=host_id,
-            description="host dna",
-        )
-        with open(os.path.join(csvdir, "{}.fasta".format(host_id)), "w") as output_handle:
-            SeqIO.write(sequences, output_handle, "fasta")
+            sequences = SeqRecord(
+                Seq(whole_seq),
+                id=host_id,
+                description="host dna",
+            )
 
-        np.save(os.path.join(csvdir, "{}.npy".format(host_id)), np.array(gene_locs))
+            if not os.path.isdir(csvdir):
+                os.mkdir(csvdir)
+
+            with open(os.path.join(csvdir, "{}.fasta".format(host_id)), "w") as output_handle:
+                SeqIO.write(sequences, output_handle, "fasta")
+
+            np.save(os.path.join(csvdir, "{}.npy".format(host_id)), np.array(gene_locs))
 
 
     return 1
