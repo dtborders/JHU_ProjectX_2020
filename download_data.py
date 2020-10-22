@@ -1,86 +1,131 @@
+import os
 import argparse
-import requests
-import json
-import os
-import urllib.request
+import numpy as np
+import pandas as pd
 from Bio import SeqIO, Entrez
-import os
-import re
+from Bio.SeqRecord import SeqRecord
+from Bio.Seq import Seq
+
 '''
 Usage:
     python download_data.py --save_dir {directory to save data, default is data}
-        --max_genome_length {maximum genome length to download, some of the genomes are huge and were not
-                            used in jupyter notebook analysis}
+        --input file {CSV file with all the host/phage id numbers}
 '''
 
+def main(save_dir, input_file, num_phages, num_hosts, email):
+    Entrez.email = email
 
-def url_to_json(url):
-    r = requests.get(url)
-    return r.json()
+    comb_dsets = pd.read_csv(input_file)
+    phages = list(set(comb_dsets['phage']))[1:]
+    bacterias = list(set(comb_dsets['host']))[1:]
 
-def make_page_url(page=None, page_size=None):
-    if page is None and page_size is None:
-        return "https://phagesdb.org/api/phages/"
-    elif page is None:
-        return "https://phagesdb.org/api/phages/?page_size={}".format(page_size)
-    elif page_size is None:
-        return "https://phagesdb.org/api/phages/?page={}".format(page)
-    return "https://phagesdb.org/api/phages/?page={}&page_size={}".format(page, page_size)
+    # Download the Phages
+    if num_phages is None or num_phages>=len(phages):
+        handle = Entrez.efetch(db="nuccore", id=phages, rettype="gb", retmode="xml")
+        phages_ass = phages
+    else:
+        handle = Entrez.efetch(db="nuccore", id=phages[0:num_phages], rettype="gb", retmode="xml")
+        phages_ass = phages[0:num_phages]
 
-def download_page(page=None, page_size=None):
-    url = make_page_url(page=page, page_size=page_size)
-    return url_to_json(url)
+    print("Downloading {} phages".format(len(phages_ass)))
 
-def download_phage_info(phage_name):
-    url = "https://phagesdb.org/api/phages/{}/".format(phage_name)
-    return url_to_json(url)
+    phages_download = Entrez.read(handle)
+    handle.close()
 
-def download_sequenced_phages(page, page_size):
-    #keep page = 1 and make page_size huge so can download in one go (unless memory is an issue)
-    url = "https://phagesdb.org/api/sequenced_phages/?page={}&page_size={}".format(page, page_size)
-    return url_to_json(url)
+    if not os.path.isdir(save_dir):
+        os.mkdir(save_dir)
 
-def download_url(url, pth):
-    urllib.request.urlretrieve(url, os.path.join(pth, url.split("/")[-1]))
+    phage_save_dir = os.path.join(save_dir, 'phages/')
+    if not os.path.isdir(phage_save_dir):
+        os.mkdir(phage_save_dir)
 
-def main(pth, max_genome_length):
-    if not os.path.isdir(pth):
-        os.mkdir(pth)
 
-    phage_pth = os.path.join(pth, "phages/")
 
-    if not os.path.isdir(phage_pth):
-        os.mkdir(phage_pth)
+    for phage, phage_id in zip(phages_download, phages_ass):
+        if not os.path.isdir(os.path.join(phage_save_dir, phage_id)):
+            os.mkdir(os.path.join(phage_save_dir, phage_id))
 
-    print("Phage data will be saved at {}...".format(phage_pth))
+        genes = np.array([foo for foo in phage['GBSeq_feature-table'] if foo['GBFeature_key'] == 'gene'])
+        whole_seq = phage['GBSeq_sequence']
 
-    # Set an arbitrary upper limit that is bigger than the data
-    phages_download = download_sequenced_phages(1, 10000)
-    with open(os.path.join(pth, 'phage_data.txt'), 'w') as outfile:
-        json.dump(phages_download, outfile)
+        sequences = SeqRecord(
+            Seq(whole_seq),
+            id=phage_id,
+            description="phage dna",
+        )
+        with open(os.path.join(phage_save_dir, str(phage_id), "{}.fasta".format(phage_id)), "w") as output_handle:
+            SeqIO.write(sequences, output_handle, "fasta")
 
-    phages = phages_download['results']
-    print("\tSucessfully downloaded info on {} phages".format(phages_download['count']))
+        np.save(os.path.join(phage_save_dir, str(phage_id), "{}.npy".format(phage_id)), genes)
 
-    print("Downloading Phage Fasta Files...")
+    # Download the Hosts
+    print("Downloading Hosts")
+    host_save_dir = os.path.join(save_dir, 'hosts/')
+    if not os.path.isdir(host_save_dir):
+        os.mkdir(host_save_dir)
 
-    for ii, pg in enumerate(phages):
-        if ii % 500 == 0 and ii != 0:
-            print("\t\t{}/{}".format(ii, len(phages)))
+    bac_to_download = bacterias if (num_hosts is None or num_hosts>=len(bacterias)) else bacterias[0:num_hosts]
 
-        if max_genome_length is None or int(pg['genome_length']) < max_genome_length:
-            try:
-                download_url(pg['fasta_file'], phage_pth)
-            except:
-                print("\t\t\tException on {}".format(pg['fasta_file']))
+    for host_id in bac_to_download:
+        print("downloading ", host_id)
+        host_id = host_id.split('.')[0]
 
-    print("\tSucesfully downloaded {} fasta files".format(len(os.listdir(phage_pth))))
+        csvdir = os.path.join(host_save_dir, host_id)
+        if not os.path.isdir(csvdir):
+            os.mkdir(csvdir)
 
+        handle = Entrez.efetch(db="nuccore", id=host_id, rettype="fasta", retmode="xml")
+        sequence = Entrez.read(handle)
+        handle.close()
+
+        whole_seq = sequence[0]['TSeq_sequence']
+
+        handle2 = Entrez.esearch(db="gene", term=host_id, retmax=100000, retmode="xml")
+        genes = Entrez.read(handle2)
+        handle2.close()
+
+        if len(genes['IdList']) == 0:
+            print("Error, could not find any genes on ncbi gene database associates w/ host id ", host_id)
+            continue
+
+        handle3 = Entrez.efetch(db="gene", id=genes['IdList'], rettype='gene_table', retmode="xml")
+        gene_infos = Entrez.read(handle3, validate=False)
+        handle3.close()
+
+        gene_locs = []
+        for ii, cres in enumerate(gene_infos):
+            #if host_id in cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1']:
+            if len(cres['Entrezgene_locus'])<2:
+                #print('here')
+                continue
+            seq_info = cres['Entrezgene_locus'][1]['Gene-commentary_seqs'][0]['Seq-loc_int']['Seq-interval']
+            gene_locs.append([seq_info['Seq-interval_to'], seq_info['Seq-interval_from']])
+            #else:
+            #    print(host_id, cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1'], 'invalid gene found')
+
+
+        sequences = SeqRecord(
+            Seq(whole_seq),
+            id=host_id,
+            description="host dna",
+        )
+        with open(os.path.join(csvdir, "{}.fasta".format(host_id)), "w") as output_handle:
+            SeqIO.write(sequences, output_handle, "fasta")
+
+        np.save(os.path.join(csvdir, "{}.npy".format(host_id)), np.array(gene_locs))
+
+
+    return 1
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--save_dir', default = "data/", help = "directory to store all the files")
-    parser.add_argument('--max_genome_length', type = int, default = None,
-                        help = "skips all phages w/ genomes longer than max_genome_length")
+    parser.add_argument('--save_dir', default="data/", help="directory to store all the files")
+    parser.add_argument('--input_file', default='Combined2.csv',
+                        help="file to get phage/host id numbers from")
+    parser.add_argument('--num_phages_to_download', default=None, type=int, help="the number of phages to downlaod, \
+                                                                       if None will download all")
+    parser.add_argument('--num_hosts_to_download', default=None, type=int, help="the number of hosts to downlaod, \
+                                                                       if None will download all")
+    parser.add_argument('--email', type=str, help="email address")
     args = parser.parse_args()
-    main(args.save_dir, args.max_genome_length)
+    main(args.save_dir, args.input_file, args.num_phages_to_download, args.num_hosts_to_download, args.email)
