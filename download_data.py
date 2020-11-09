@@ -16,21 +16,23 @@ def main(save_dir, input_file, num_phages, num_hosts, email):
     Entrez.email = email
 
     comb_dsets = pd.read_csv(input_file)
-    phages = list(set(comb_dsets['phage']))[1:]
-    bacterias = list(set(comb_dsets['host']))[1:]
-
+    phages = list(set(comb_dsets['phage']))[0:]
+    bacterias = list(set(comb_dsets['host']))[0:]
+    
     # Download the Phages
     if num_phages is None or num_phages>=len(phages):
         handle = Entrez.efetch(db="nuccore", id=phages, rettype="gb", retmode="xml")
         phages_ass = phages
     else:
         handle = Entrez.efetch(db="nuccore", id=phages[0:num_phages], rettype="gb", retmode="xml")
-        phages_ass = phages[0:num_phages]
+        phages_ass = phages[0:num_phages]        
 
     print("Downloading {} phages".format(len(phages_ass)))
-
+    
     phages_download = Entrez.read(handle)
     handle.close()
+
+    print("Finished Reading")
 
     if not os.path.isdir(save_dir):
         os.mkdir(save_dir)
@@ -38,7 +40,6 @@ def main(save_dir, input_file, num_phages, num_hosts, email):
     phage_save_dir = os.path.join(save_dir, 'phages/')
     if not os.path.isdir(phage_save_dir):
         os.mkdir(phage_save_dir)
-
 
 
     for phage, phage_id in zip(phages_download, phages_ass):
@@ -63,9 +64,10 @@ def main(save_dir, input_file, num_phages, num_hosts, email):
             SeqIO.write(sequences, output_handle, "fasta")
 
         np.save(os.path.join(phage_save_dir, str(phage_id), "{}.npy".format(phage_id)), np.array(gene_numbers))
+        #print("Finish {}".format(phage_id))
 
     # Download the Hosts
-    print("Downloading Hosts")
+    print("Downloading {} Hosts".format(len(bacterias)))
     host_save_dir = os.path.join(save_dir, 'hosts/')
     if not os.path.isdir(host_save_dir):
         os.mkdir(host_save_dir)
@@ -120,22 +122,26 @@ def main(save_dir, input_file, num_phages, num_hosts, email):
 
                 if len(genes['IdList']) == 0:
                     print("\t\tError, could not find any genes on ncbi gene database associates w/ host id ", host_id)
-                    continue
+                    h = Entrez.efetch(db="nuccore", id=host_id, rettype="ft", retmode="text")
+                    b = h.readlines()
+                    my_gene = [tmp.split('\t')[0:2] for tmp in b if 'CDS' in tmp and '>' not in tmp and '<' not in tmp]
+                    my_gene = [i for i in my_gene if not (i[0] == '' or i[1] == '')]
+                    gene_locs = np.array(my_gene, dtype=int)
+                else:
+                    handle3 = Entrez.efetch(db="gene", id=genes['IdList'], rettype='gene_table', retmode="xml")
+                    gene_infos = Entrez.read(handle3, validate=False)
+                    handle3.close()
 
-                handle3 = Entrez.efetch(db="gene", id=genes['IdList'], rettype='gene_table', retmode="xml")
-                gene_infos = Entrez.read(handle3, validate=False)
-                handle3.close()
-
-                gene_locs = []
-                for ii, cres in enumerate(gene_infos):
-                    #if host_id in cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1']:
-                    if len(cres['Entrezgene_locus'])<2:
-                        #print('here')
-                        continue
-                    seq_info = cres['Entrezgene_locus'][1]['Gene-commentary_seqs'][0]['Seq-loc_int']['Seq-interval']
-                    gene_locs.append([int(seq_info['Seq-interval_to']), int(seq_info['Seq-interval_from'])])
-                    #else:
-                    #    print(host_id, cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1'], 'invalid gene found')
+                    gene_locs = []
+                    for ii, cres in enumerate(gene_infos):
+                        #if host_id in cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1']:
+                        if len(cres['Entrezgene_locus'])<2:
+                            #print('here')
+                            continue
+                        seq_info = cres['Entrezgene_locus'][1]['Gene-commentary_seqs'][0]['Seq-loc_int']['Seq-interval']
+                        gene_locs.append([int(seq_info['Seq-interval_to']), int(seq_info['Seq-interval_from'])])
+                        #else:
+                        #    print(host_id, cres['Entrezgene_gene-source']['Gene-source']['Gene-source_src-str1'], 'invalid gene found')
 
 
                 sequences = SeqRecord(
