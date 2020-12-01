@@ -1,410 +1,354 @@
-index,host,name,taxonomy
-0,CP001713,Chlamydia pneumoniae LPCoLN,Bacteria; Chlamydiae; Chlamydiales; Chlamydiaceae; Chlamydia/Chlamydophila group; Chlamydia
-1,CP006884,Haloarcula hispanica N601,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Halobacteriales; Haloarculaceae; Haloarcula
-2,NZ_CP042449.1,Vibrio alginolyticus,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-3,NZ_CP013990.1,Leclercia adecarboxylata,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Leclercia
-4,CP000031,Ruegeria pomeroyi DSS-3,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Ruegeria
-5,PEKX01000007,Pseudomonas sp.,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-6,NZ_CP050266.1,Salinivibrio costicola,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Salinivibrio
-7,NZ_CP007810.1,Xanthomonas oryzae pv. oryzicola,Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
-8,NC_014925.1,Staphylococcus pseudintermedius HKU10-03,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-9,NZ_CP015750.1,Pectobacterium wasabiae CFBP 3304,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Pectobacterium
-10,NZ_CM009828.1,Edwardsiella tarda,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Hafniaceae; Edwardsiella
-11,NZ_LR134089.1,Staphylococcus saprophyticus subsp. saprophyticus,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-12,NZ_AP019750.1,Lactobacillus delbrueckii subsp. delbrueckii,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
-13,NZ_KB849641.1,Acinetobacter soli NIPH 2899,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter
-14,NZ_WCFV01000001.1,Lactobacillus helveticus,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
-15,CP000388,Pseudoalteromonas atlantica T6c,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
-16,AP014630,Acinetobacter guillouiae,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter
-17,NZ_PKKP01000001.1,Actinomyces naeslundii,Bacteria; Actinobacteria; Actinomycetales; Actinomycetaceae; Actinomyces
-18,NZ_CP027107.1,Cronobacter sakazakii,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Cronobacter
-19,NC_009952.1,Dinoroseobacter shibae DFL 12 = DSM 16493,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Dinoroseobacter
-20,NZ_FOYN01000001,Halorubrum sodomense,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Haloferacales; Halorubraceae; Halorubrum
-21,NZ_CWGL01000001.1,Yersinia enterocolitica,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
-22,NZ_CP035288.1,Staphylococcus epidermidis,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-23,NZ_CP011663.1,Clostridium sporogenes,Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
-24,KY464958,Apis mellifera lamarckii,Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata; Apoidea; Apidae; Apis
-25,NZ_CP012958.1,Aggregatibacter actinomycetemcomitans,Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Aggregatibacter
-26,NZ_LFTY01000002,Candidatus Rhodobacter lobularis,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Rhodobacter
-27,CP034433,Iodobacter sp. H11R3,Bacteria; Proteobacteria; Betaproteobacteria; Neisseriales; Chromobacteriaceae; Iodobacter
-28,NC_006085.1,Cutibacterium acnes KPA171202,Bacteria; Actinobacteria; Propionibacteriales; Propionibacteriaceae; Cutibacterium
-29,NZ_OCQN01000001,Streptomyces sp. OK228,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-30,MN294681.1,Microbacterium foliorum,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-31,NZ_KB890221.1,Rhizobium gallicum bv. gallicum R602sp,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Rhizobium
-32,NZ_LR134373.1,Yersinia pseudotuberculosis,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
-33,NZ_AOJL01000060,Halorubrum coriense DSM 10284,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Haloferacales; Halorubraceae; Halorubrum
-34,CP020451,Streptococcus salivarius,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-35,NZ_LOQW01000006.1,Corynebacterium glutamicum,Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
-36,NZ_CP011007.1,Bacillus pumilus,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
-37,NZ_AP018203.1,Leptolyngbya boryana NIES-2135,Bacteria; Cyanobacteria; Synechococcales; Leptolyngbyaceae; Leptolyngbya
-38,NZ_CABEIC010000001.1,Gordonia terrae,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-39,KC900889,Phaeocystis globosa,Eukaryota; Haptista; Haptophyta; Prymnesiophyceae; Phaeocystales; Phaeocystaceae; Phaeocystis
-40,NZ_CP014955.1,Mycobacteroides abscessus,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacteroides
-41,NZ_LN831027.1,Fusobacterium nucleatum subsp. polymorphum,Bacteria; Fusobacteria; Fusobacteriales; Fusobacteriaceae; Fusobacterium
-42,NZ_HF571038.1,Tetrasphaera jenkinsii Ben 74,Bacteria; Actinobacteria; Micrococcales; Intrasporangiaceae; Tetrasphaera
-43,NZ_CP033334.1,Mesorhizobium loti,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Phyllobacteriaceae; Mesorhizobium
-44,KT970065,Tipula cockerelliana,Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota; Neoptera; Holometabola; Diptera; Nematocera; Tipuloidea; Tipulidae; Tipula
-45,NC_014574,Culex quinquefasciatus,Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota; Neoptera; Holometabola; Diptera; Nematocera; Culicoidea; Culicidae; Culicinae; Culicini; Culex; Culex
-46,NC_006461.1,Thermus thermophilus HB8,Bacteria; Deinococcus-Thermus; Deinococci; Thermales; Thermaceae; Thermus
-47,KP691602,Dunaliella viridis,Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; Chlamydomonadales; Dunaliellaceae; Dunaliella
-48,NZ_RPMX01000001.1,Sinorhizobium meliloti,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Sinorhizobium/Ensifer group; Sinorhizobium
-49,CP019892,Microbacterium foliorum,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-50,NZ_JACAWZ010000001.1,Ralstonia pickettii,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Ralstonia
-51,CP032788,Corynebacterium xerosis,Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
-52,NZ_QMJJ01000010.1,Leuconostoc pseudomesenteroides,Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Leuconostoc
-53,NZ_QLMF01000001.1,Rhizobium etli,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Rhizobium
-54,NZ_CP047242.1,Trichormus variabilis 0441,Bacteria; Cyanobacteria; Nostocales; Nostocaceae; Trichormus
-55,NC_014965.1,Vibrio vulnificus MO6-24/O,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-56,GG663735,Micromonas pusilla CCMP1545,Eukaryota; Viridiplantae; Chlorophyta; Mamiellophyceae; Mamiellales; Mamiellaceae; Micromonas
-57,NC_017045.1,Riemerella anatipestifer ATCC 11845 = DSM 15868,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Weeksellaceae; Riemerella
-58,NZ_CP023567.1,Erwinia pyrifoliae,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
-59,NZ_KB849702.1,Acinetobacter johnsonii ANC 3681,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter
-60,NVTK01000009,Pseudoalteromonas sp.,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
-61,NC_010163.1,Acholeplasma laidlawii PG-8A,Bacteria; Tenericutes; Mollicutes; Acholeplasmatales; Acholeplasmataceae; Acholeplasma
-62,CP001397,Nonlabens dokdonensis DSW-6,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Nonlabens
-63,NC_002771.1,Mycoplasma pulmonis UAB CTIP,Bacteria; Tenericutes; Mollicutes; Mycoplasmataceae; Mycoplasma
-64,NZ_CP035306.1,Streptococcus thermophilus,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-65,NC_018681.1,Nocardia brasiliensis ATCC 700358,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
-66,NZ_RCTK01000001.1,Geobacillus stearothermophilus,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Geobacillus
-67,CP040255.1,Mycobacterium avium subsp. hominissuis,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium avium complex (MAC)
-68,NZ_UFTQ01000001,Brevibacterium iodinum,Bacteria; Actinobacteria; Micrococcales; Brevibacteriaceae; Brevibacterium
-69,QLNP01000098,Arthrobacter globiformis,Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Arthrobacter
-70,RXKE01000007,Gordonia sp.,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-71,NZ_CP013237.1,Streptococcus mutans,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-72,NC_016111.1,Streptomyces cattleya NRRL 8057 = DSM 46488,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-73,CP011132,Citrobacter amalonaticus Y19,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter
-74,NZ_CP020822.1,Tenacibaculum maritimum,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Tenacibaculum
-75,NZ_CP030105.1,Lactiplantibacillus plantarum,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactiplantibacillus
-76,NZ_FLYG01000003,Lactobacillus pentosus MP-10,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactiplantibacillus
-77,NZ_JAAXPD010000001.1,Gordonia sputi,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-78,NZ_CP018296.1,Chlamydia abortus LLG,Bacteria; Chlamydiae; Chlamydiales; Chlamydiaceae; Chlamydia/Chlamydophila group; Chlamydia
-79,NC_010103.1,Brucella canis ATCC 23365,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
-80,NZ_NQCD01000010.1,Shigella sonnei,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Shigella
-81,NC_006510.1,Geobacillus kaustophilus HTA426,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Geobacillus; Geobacillus thermoleovorans group
-82,NZ_NCUP01000009.1,Streptococcus oralis subsp. oralis,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-83,NZ_CP014135.1,Pseudomonas agarici,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-84,NZ_LN854557.1,Sodalis glossinidius str. 'morsitans',Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Sodalis
-85,NZ_JAANOB010000217.1,Streptomyces coelicolor,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces; Streptomyces albidoflavus group
-86,NZ_CP050956.1,Parabacteroides distasonis,Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Tannerellaceae; Parabacteroides
-87,NZ_CP041040.1,Microbacterium foliorum,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-88,NZ_CP031781.1,Vibrio parahaemolyticus,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-89,NZ_FOQB01000027.1,Pseudomonas syringae,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-90,NZ_MWMD01000001.1,Enterobacter cloacae subsp. cloacae,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
-91,NZ_ABJL02000008.1,Bacteroides intestinalis DSM 17393,Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides
-92,CP002293,Geobacillus sp. Y4.1MC1,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Geobacillus; unclassified Geobacillus
-93,CP001751,Candidatus Puniceispirillum marinum IMCC1322,Bacteria; Proteobacteria; Alphaproteobacteria; SAR116 cluster; Candidatus Puniceispirillum
-94,NZ_JNIU01000001,Candidatus Pelagibacter ubique HTCC7217,Bacteria; Proteobacteria; Alphaproteobacteria; Pelagibacterales; Pelagibacteraceae; Candidatus Pelagibacter
-95,NZ_AOLH01000002,Haloferax lucentense DSM 14919,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Haloferacales; Haloferacaceae; Haloferax
-96,NC_001700,Felis catus,Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Felinae; Felis
-97,NZ_CP009125.1,Pectobacterium atrosepticum,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Pectobacterium
-98,NZ_CP034148.1,Pantoea agglomerans,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Pantoea; Pantoea agglomerans group
-99,HQ914635,Chlorella variabilis,Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Trebouxiophyceae; Chlorellales; Chlorellaceae; Chlorella clade; Chlorella
-100,NR_026488.1,Gordonia alkanivorans,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-101,EU557093,Tursiops truncatus,Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Delphinidae; Tursiops
-102,NZ_CP046672.1,Raoultella ornithinolytica,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Raoultella
-103,NC_015601.1,Erysipelothrix rhusiopathiae str. Fujisawa,Bacteria; Firmicutes; Erysipelotrichia; Erysipelotrichales; Erysipelotrichaceae; Erysipelothrix
-104,NC_009438.1,Shewanella putrefaciens CN-32,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Shewanellaceae; Shewanella
-105,NZ_UFTQ01000003.1,Brevibacterium iodinum,Bacteria; Actinobacteria; Micrococcales; Brevibacteriaceae; Brevibacterium
-106,AL645882,Streptomyces coelicolor A3(2),Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces; Streptomyces albidoflavus group
-107,NZ_CP021654.1,Aeromonas salmonicida,Bacteria; Proteobacteria; Gammaproteobacteria; Aeromonadales; Aeromonadaceae; Aeromonas
-108,NZ_CP053931.1,Bacillus cereus,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
-109,NZ_CP058243.1,Xanthomonas campestris pv. raphani,Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
-110,CP013913,Serratia fonticola,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Serratia
-111,CP014475,Mycolicibacterium phlei,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
-112,NZ_LR134475.1,Klebsiella aerogenes,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella
-113,NZ_AEUD01000047.1,Gordonia neofelifaecis NRRL B-59395,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-114,NZ_GG657755.1,Streptomyces himastatinicus ATCC 53653,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-115,NZ_CP023691.1,Streptomyces platensis,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-116,NZ_CP011028.1,Pseudoalteromonas espejiana DSM 9414,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
-117,NZ_DF968533,Streptomyces azureus,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-118,NZ_MRCG01000001.1,Phormidium tenue NIES-30,Bacteria; Cyanobacteria; Oscillatoriophycideae; Oscillatoriales; Oscillatoriaceae; Phormidium
-119,CP011102,Listeria weihenstephanensis,Bacteria; Firmicutes; Bacilli; Bacillales; Listeriaceae; Listeria
-120,NZ_BCTM01000001,Kluyvera cryocrescens NBRC 102467,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Kluyvera
-121,CP025034,Lelliottia nimipressuralis,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Lelliottia
-122,NZ_PHHD01000001.1,Pseudomonas tolaasii NCPPB 2192,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-123,NZ_MIGA01000001,Streptomyces platensis,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-124,NZ_AP012555.1,Mycobacterium avium subsp. hominissuis TH135,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium avium complex (MAC)
-125,CP018363,Mycobacterium avium subsp. hominissuis,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium avium complex (MAC)
-126,MF925712,Equus caballus,Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Perissodactyla; Equidae; Equus
-127,NZ_CP024902.1,Burkholderia pyrrocinia,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
-128,NC_022112.1,Lactobacillus paracasei subsp. paracasei 8700:2,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lacticaseibacillus
-129,LT708304.1,Mycobacterium tuberculosis variant bovis AF2122/97,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium tuberculosis complex
-130,NZ_AMGI01000001.1,Spiroplasma melliferum IPMB4A,Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
-131,NZ_CP020567.1,Kitasatospora aureofaciens,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Kitasatospora
-132,AF346474.1,Streptomyces indigocolor,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-133,NZ_CP046058.1,Microcystis aeruginosa NIES-298,Bacteria; Cyanobacteria; Oscillatoriophycideae; Chroococcales; Microcystaceae; Microcystis
-134,NC_017731.1,Providencia stuartii MRSN 2154,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Providencia
-135,NZ_AP012544.1,Lactobacillus casei DSM 20011 = JCM 1134 = ATCC 393,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lacticaseibacillus
-136,NZ_LDUS01000001.1,Bacillus safensis,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
-137,NZ_CP011491.1,Mycolicibacterium vaccae 95051,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
-138,NC_003228.3,Bacteroides fragilis NCTC 9343,Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides
-139,NZ_CP031055.1,Vibrio splendidus,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-140,NC_022737.1,Staphylococcus pasteuri SP1,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-141,NZ_CP010450.1,Streptococcus pyogenes,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-142,NZ_QEOC01000001.1,Rhodococcus globerulus,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
-143,NZ_BJNB00000000.1,Corynebacterium flavescens,Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
-144,NZ_ABYX02000001.1,Streptomyces filamentosus NRRL 11379,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-145,NZ_JYCD01000001.1,Aeribacillus pallidus,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Aeribacillus
-146,CP012196,Campylobacter gracilis,Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales; Campylobacteraceae; Campylobacter
-147,NZ_CP013911.1,Staphylococcus haemolyticus,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-148,NZ_CP008813.1,Streptococcus agalactiae,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-149,KU885916.2,Streptomyces tricolor,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-150,NZ_CP045769.1,Enterobacter cancerogenus,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
-151,CP019236,Rhodoferax koreense,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Rhodoferax
-152,NZ_CP032788.1,Corynebacterium xerosis,Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
-153,RKIY01000003,Bacillus sp. (in: Bacteria),Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
-154,NZ_JH603143.1,Klebsiella oxytoca 10-5243,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella
-155,NZ_CP023558.1,Pseudoalteromonas marina,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
-156,NZ_CP033724.1,Clavibacter michiganensis subsp. michiganensis,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Clavibacter
-157,NZ_CP023464.1,Pseudoalteromonas atlantica,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
-158,NZ_DF968184.1,Streptomyces azureus,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-159,NZ_QANO01000198.1,Pseudomonas plecoglossicida,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-160,CM003594,Psychrobacter sp. P11F6,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Psychrobacter
-161,NC_017168.1,Yersinia pestis A1122,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
-162,NZ_CP027114.1,Gordonia alkanivorans,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-163,NZ_CM001153,Salmonella enterica subsp. enterica serovar Gallinarum str. SG9,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
-164,NZ_LK391965,Vibrio nigripulchritudo SOn1,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-165,NZ_CP027738.1,Pseudomonas chlororaphis subsp. piscium,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-166,MH400164,Streptomyces sp.,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-167,NC_008390.1,Burkholderia ambifaria AMMD,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
-168,NZ_CCKZ01000001,Salmonella enterica subsp. enterica serovar Paratyphi A,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
-169,NC_030916.1,Tsukamurella phage TPA4,Viruses; Duplodnaviria; Heunggongvirae; Uroviricota; Caudoviricetes; Caudovirales; Siphoviridae
-170,NZ_CP032757.1,Lactobacillus pentosus,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactiplantibacillus
-171,NC_003155.5,Streptomyces avermitilis MA-4680 = NBRC 14893,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-172,MK061416.1,Rothia phage Spartoi,Viruses; Duplodnaviria; Heunggongvirae; Uroviricota; Caudoviricetes; Caudovirales; Siphoviridae
-173,AP014565,Salmonella enterica subsp. enterica serovar Typhimurium str. L-3553,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
-174,NZ_CP010341.1,Propionibacterium freudenreichii subsp. freudenreichii,Bacteria; Actinobacteria; Propionibacteriales; Propionibacteriaceae; Propionibacterium
-175,NC_013961.1,Erwinia amylovora CFBP1430,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
-176,NZ_CP009460.1,Dickeya fangzhongdai,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Dickeya
-177,NZ_UWXU01000001,Klebsiella pneumoniae,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella
-178,NZ_CM001889,Streptomyces lividans 1326,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-179,NC_014159.1,Tsukamurella paurometabola DSM 20162,Bacteria; Actinobacteria; Corynebacteriales; Tsukamurellaceae; Tsukamurella
-180,NZ_CP039700.1,Vibrio cyclitrophicus,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-181,NZ_VYRZ00000000.1,Microbacterium radiodurans,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-182,NC_005042.1,Prochlorococcus marinus subsp. marinus str. CCMP1375,Bacteria; Cyanobacteria; Synechococcales; Prochloraceae; Prochlorococcus
-183,NC_013282.2,Cronobacter turicensis z3032,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Cronobacter
-184,NZ_LCZH01000038.1,Delftia tsuruhatensis,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Delftia
-185,NZ_MTKC01000002.1,Streptomyces griseofuscus,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-186,MH202953,Cyprinus carpio,Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Actinopterygii; Neopterygii; Teleostei; Ostariophysi; Cypriniformes; Cyprinidae; Cyprininae; Cyprinus
-187,NZ_CP028926.1,Pasteurella multocida,Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Pasteurella
-188,NZ_CP009976.1,Cellulophaga baltica 18,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga
-189,NZ_CP013922.1,Staphylococcus xylosus,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-190,NZ_BMTY00000000.1,Streptomyces toxytricini,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-191,NC_004557.1,Clostridium tetani E88,Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
-192,NZ_LS999521.1,Acinetobacter calcoaceticus,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter; Acinetobacter calcoaceticus/baumannii complex
-193,NZ_AEZA01000001.1,Vibrio anguillarum 96F,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-194,CP004046,[Brevibacterium] flavum ZL-1,Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
-195,NZ_QGLK01000001.1,Bifidobacterium asteroides,Bacteria; Actinobacteria; Bifidobacteriales; Bifidobacteriaceae; Bifidobacterium
-196,NC_012917.1,Pectobacterium carotovorum subsp. carotovorum PC1,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Pectobacterium
-197,NC_012924.1,Streptococcus suis SC84,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-198,NZ_CP007203.1,Nodularia spumigena CCY9414,Bacteria; Cyanobacteria; Nostocales; Aphanizomenonaceae; Nodularia
-199,NZ_CP025774.1,Achromobacter xylosoxidans,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Achromobacter
-200,NZ_CP009977.1,Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-201,NZ_UGQI01000002.1,Mycolicibacterium phlei,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
-202,QOUU01000001,Lactobacillus sp.,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
-203,NZ_CP048408.1,Pseudomonas fluorescens,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-204,NZ_MDHN01000001.1,Alteromonas confluentis,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Alteromonadaceae; Alteromonas
-205,NZ_CP039729.1,Enterococcus faecium,Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae; Enterococcus
-206,NZ_FRBZ01000017.1,Morganella morganii,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Morganella
-207,CP017605,Candidatus Hamiltonella defensa,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; aphid secondary symbionts; Candidatus Hamiltonella
-208,NZ_CP035780.1,Photobacterium damselae,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Photobacterium
-209,NC_001637,Acanthamoeba castellanii,Eukaryota; Amoebozoa; Discosea; Longamoebia; Centramoebida; Acanthamoebidae; Acanthamoeba
-210,NC_007677.1,Salinibacter ruber DSM 13855,Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Salinibacter
-211,NZ_JYNI01000003,Thalassomonas actiniarum,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Thalassomonas
-212,NZ_CP027793.1,Rhodococcus hoagii,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
-213,MTKC01000003,Streptomyces griseofuscus,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-214,CP003488,Providencia stuartii MRSN 2154,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Providencia
-215,NZ_MUYO01000001.1,Streptococcus mitis,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-216,NZ_QLNP01000001.1,Arthrobacter globiformis,Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Arthrobacter
-217,NZ_CP014324.1,Oenococcus oeni,Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Oenococcus
-218,NZ_CP008880.1,Flavobacterium psychrophilum,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Flavobacterium
-219,NC_021505.1,Pseudomonas putida NBRC 14164,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-220,NZ_KV917375.1,Bacillus halmapalus,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
-221,NZ_CH724157.1,Roseovarius nubinhibens ISM,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Roseovarius
-222,NZ_VISK01000013.1,Azospirillum brasilense,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Rhodospirillaceae; Azospirillum
-223,NVUT01000001,Flavobacterium sp.,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Flavobacterium
-224,MT645820.1,Microbacterium natoriense,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-225,NZ_AQYI01000001.1,Microbacterium paraoxydans 77MFTsu3.2,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-226,NC_012470.1,Streptococcus equi subsp. zooepidemicus,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-227,NC_007530.2,Bacillus anthracis str. 'Ames Ancestor',Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
-228,CP027029,Listeria monocytogenes,Bacteria; Firmicutes; Bacilli; Bacillales; Listeriaceae; Listeria
-229,NZ_CM000719.1,Bacillus mycoides,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
-230,NZ_JH719383.1,Rhizobium leguminosarum bv. viciae WSM1455,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Rhizobium
-231,AF193903,Cafeteria roenbergensis,Eukaryota; Sar; Stramenopiles; Bigyra; Opalozoa; Bicosoecida; Cafeteriaceae; Cafeteria
-232,KC990831,Ostreococcus tauri,Eukaryota; Viridiplantae; Chlorophyta; Mamiellophyceae; Mamiellales; Bathycoccaceae; Ostreococcus
-233,NC_013198.1,Lactobacillus rhamnosus GG,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lacticaseibacillus
-234,NZ_MDBB01000001.1,Vibrio breoganii,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-235,NZ_AWTB01000001.1,Gordonia amicalis CCMA-559,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-236,NZ_KV917376,[Bacillus] clarkii,Bacteria; Firmicutes; Bacilli; Bacillales; Sporolactobacillaceae; Sporolactobacillaceae incertae sedis
-237,NZ_ALPT02000001,Bacillus alcalophilus ATCC 27647 = CGMCC 1.3604,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Alkalihalobacillus
-238,MH841968,Ovis aries,Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Ovis
-239,NC_010002.1,Delftia acidovorans SPH-1,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Delftia
-240,NC_021883.1,Mannheimia haemolytica USMARC_2286,Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Mannheimia
-241,NZ_LR134352.1,Nocardia asteroides,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
-242,NZ_SPGG01000010.1,Parabacteroides merdae,Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Tannerellaceae; Parabacteroides
-243,NZ_CP030777.1,Faecalibacterium prausnitzii,Bacteria; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Faecalibacterium
-244,LC361338,Arthrobacter sp.,Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Arthrobacter
-245,NZ_AP014524.1,Vibrio cholerae MS6,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-246,NZ_CP035765.1,Sphingomonas paucimobilis,Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas
-247,NZ_LS483405.1,Lactobacillus brevis,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Levilactobacillus
-248,NZ_PKRZ01000001.1,Lactococcus lactis subsp. lactis,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Lactococcus
-249,NZ_AOLS01000062,Haloarcula californiae ATCC 33799,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Halobacteriales; Haloarculaceae; Haloarcula
-250,KU167097,Tetraselmis sp. CCMP 881,Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorodendrophyceae; Chlorodendrales; Chlorodendraceae; Tetraselmis; unclassified Tetraselmis
-251,NZ_CP032675.1,Rhodococcus rhodochrous,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
-252,NZ_CP008781.1,Burkholderia pseudomallei,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; pseudomallei group
-253,NZ_CP015286.1,Paenibacillus glucanolyticus,Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Paenibacillus
-254,NZ_FNKM01000002.1,Pseudomonas grimontii,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-255,NC_012490.1,Rhodococcus erythropolis PR4,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
-256,FN554889,Streptomyces scabiei 87.22,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-257,NZ_FOTC01000001,Halogranum rubrum,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Haloferacales; Haloferacaceae
-258,NC_007651.1,Burkholderia thailandensis E264,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; pseudomallei group
-259,NZ_CP014170.1,Clostridium tyrobutyricum,Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
-260,MT024872.1,Streptomyces phage Muntaha,Viruses; Duplodnaviria; Heunggongvirae; Uroviricota; Caudoviricetes; Caudovirales; Siphoviridae; Wilnyevirus; unclassified Wilnyevirus
-261,NZ_CP015137.1,Dickeya solani IPO 2222,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Dickeya
-262,CP014518,Sinomonas atrocyanea,Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Sinomonas
-263,CP024902,Burkholderia pyrrocinia,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
-264,NZ_FNLM01000034,Gordonia westfalica,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-265,NZ_CP028813.1,Edwardsiella ictaluri,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Hafniaceae; Edwardsiella
-266,NZ_CP010899.1,Spiroplasma kunkelii CR2-3x,Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
-267,NZ_BAOP01000115.1,Gordonia malaquae NBRC 108250,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-268,NZ_CP023560,Staphylococcus aureus,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-269,CP003184,Thermoanaerobacterium saccharolyticum JW/SL-YS485,Bacteria; Firmicutes; Clostridia; Thermoanaerobacterales; Thermoanaerobacterales Family III. Incertae Sedis; Thermoanaerobacterium
-270,NZ_QTTZ01000001,Microbacterium trichothecenolyticum,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-271,NZ_AP022561.1,Mycolicibacterium aichiense,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
-272,NC_008095.1,Myxococcus xanthus DK 1622,Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Cystobacterineae; Myxococcaceae; Myxococcus
-273,NZ_CP006850.1,Nocardia nova SH22a,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
-274,LR134359,Campylobacter jejuni subsp. doylei,Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales; Campylobacteraceae; Campylobacter
-275,NZ_LHAD01000001.1,Streptococcus parauberis,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-276,NZ_KZ846072.1,Enterococcus faecalis,Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae; Enterococcus
-277,NZ_LR594046.1,Streptococcus dysgalactiae,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-278,NZ_FNOF01000001,Haloarcula vallismortis,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Halobacteriales; Haloarculaceae; Haloarcula
-279,FP236843,Erwinia billingiae Eb661,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
-280,CP013614,Enterococcus silesiacus,Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae; Enterococcus
-281,NZ_LT629770,Microbacterium paraoxydans,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-282,CP029897,Salmonella enterica subsp. enterica serovar Typhi,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
-283,NZ_JXYE01000002,Loktanella sp. S4079,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Loktanella
-284,NC_017287.1,Chlamydia psittaci 6BC,Bacteria; Chlamydiae; Chlamydiales; Chlamydiaceae; Chlamydia/Chlamydophila group; Chlamydia
-285,SDYW01000001,bacterium,Bacteria
-286,NZ_CP013187.1,Pseudoalteromonas phenolica,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
-287,NZ_ATTH01000001,Salisaeta longa DSM 21114,Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Salisaeta
-288,NC_004556.1,Xylella fastidiosa Temecula1,Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xylella
-289,JTHH01000008,Bacillus thuringiensis serovar morrisoni,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
-290,NZ_CP045235.1,Burkholderia cepacia,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
-291,NVUC01000001,Sulfitobacter sp.,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Sulfitobacter
-292,CP020809,Mycobacterium dioxanotrophicus,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium
-293,NZ_CP033732.1,Staphylococcus hominis,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-294,NZ_CP031422.1,Microbacterium oxydans,Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
-295,NZ_KK211277.1,Bacillus bogoriensis ATCC BAA-922,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Alkalihalobacillus
-296,NZ_CP017151.1,Limosilactobacillus fermentum,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Limosilactobacillus
-297,NZ_PETF01000001,Spiroplasma poulsonii,Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
-298,NZ_VNGZ01000001.1,Weissella cibaria,Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Weissella
-299,NC_007288,Emiliania huxleyi,Eukaryota; Haptista; Haptophyta; Prymnesiophyceae; Isochrysidales; Noelaerhabdaceae; Emiliania
-300,NZ_KE136308.1,Erwinia tracheiphila PSU-1,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
-301,NC_013929.1,Streptomyces scabiei 87.22,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-302,NZ_CP013197.1,Spiroplasma citri,Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
-303,NZ_CP014474.1,Serratia rubidaea,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Serratia
-304,MH286069,Clostera anastomosis,Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia; Noctuoidea; Notodontidae; Pygaerinae; Clostera
-305,MN586063.1,Mycobacterium phage Isca,Viruses; Duplodnaviria; Heunggongvirae; Uroviricota; Caudoviricetes; Caudovirales; Siphoviridae; Fromanvirus; unclassified Fromanvirus
-306,MT498063.1,Microbacterium phage Mercedes,Viruses; Duplodnaviria; Heunggongvirae; Uroviricota; Caudoviricetes; Caudovirales; Siphoviridae; Neferthenavirus; unclassified Neferthenavirus
-307,NZ_CP024819.1,Citrobacter freundii,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter; Citrobacter freundii complex
-308,NZ_MSJW02000001.1,Shigella dysenteriae,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Shigella
-309,NZ_SGOE01000001.1,Agrobacterium tumefaciens,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Agrobacterium; Agrobacterium tumefaciens complex
-310,NZ_CP019687.1,Paenibacillus larvae subsp. larvae,Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Paenibacillus
-311,NZ_BBQG01000095.1,Streptomyces albus,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-312,NZ_CP009016.1,Xanthomonas citri pv. citri,Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
-313,NC_011071.1,Stenotrophomonas maltophilia R551-3,Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Stenotrophomonas; Stenotrophomonas maltophilia group
-314,NZ_CP029197.1,Streptomyces venezuelae ATCC 10712,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-315,NZ_FNSA01000003,Tsukamurella tyrosinosolvens,Bacteria; Actinobacteria; Corynebacteriales; Tsukamurellaceae; Tsukamurella
-316,NZ_CP025545.1,Brevibacillus laterosporus,Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Brevibacillus
-317,NZ_SAUP01000001,Pseudomonas asplenii,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-318,JN632628,Connochaetes taurinus,Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Alcelaphinae; Connochaetes
-319,NC_008530.1,Lactobacillus gasseri ATCC 33323 = JCM 1131,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
-320,NZ_CP019870.1,Clostridioides difficile,Bacteria; Firmicutes; Clostridia; Clostridiales; Peptostreptococcaceae; Clostridioides
-321,NZ_FEBQ01000001.1,Streptococcus pneumoniae,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-322,NC_008752.1,Acidovorax citrulli AAC00-1,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Acidovorax
-323,NC_007618.1,Brucella abortus 2308,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
-324,NC_010694.1,Erwinia tasmaniensis Et1/99,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
-325,NZ_MDFG01000001.1,Streptomyces hygroscopicus subsp. hygroscopicus,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-326,NZ_LT629758,Actinoplanes derwentensis,Bacteria; Actinobacteria; Micromonosporales; Micromonosporaceae; Actinoplanes
-327,NZ_CM002803,Planktothrix agardhii NIVA-CYA 126/8,Bacteria; Cyanobacteria; Oscillatoriophycideae; Oscillatoriales; Microcoleaceae; Planktothrix
-328,NZ_LXWL01000001.1,Lactococcus garvieae,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Lactococcus
-329,NC_048650.1,Streptomyces phage BRock,Viruses; Duplodnaviria; Heunggongvirae; Uroviricota; Caudoviricetes; Caudovirales; Myoviridae
-330,CP003563,Sinorhizobium fredii USDA 257,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Sinorhizobium/Ensifer group; Sinorhizobium
-331,NZ_CM000747.1,Bacillus thuringiensis Bt407,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
-332,NZ_CP018809.1,Lactobacillus jensenii,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
-333,NZ_CP013992.1,Flavobacterium columnare,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Flavobacterium
-334,NC_013501.1,Rhodothermus marinus DSM 4252,Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus
-335,CP023315,Caulobacter vibrioides,Bacteria; Proteobacteria; Alphaproteobacteria; Caulobacterales; Caulobacteraceae; Caulobacter
-336,CP001404,Sulfolobus islandicus Y.N.15.51,Archaea; Crenarchaeota; Thermoprotei; Sulfolobales; Sulfolobaceae; Sulfolobus
-337,NZ_CP050013.1,Serratia marcescens,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Serratia
-338,NC_015276.1,Marinomonas mediterranea MMB-1,Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Oceanospirillaceae; Marinomonas
-339,NZ_MUTR01000001.1,Burkholderia cenocepacia,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
-340,NZ_CP046618.1,Enterobacter asburiae,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
-341,NZ_BMUQ00000000.1,Streptomyces mirabilis,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-342,NZ_CP021140.1,Eggerthella lenta,Bacteria; Actinobacteria; Coriobacteriia; Eggerthellales; Eggerthellaceae; Eggerthella
-343,NZ_CP041695.1,Nocardia otitidiscaviarum,Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
-344,NZ_JMSZ01000016,Nitrincola lacisaponensis,Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Oceanospirillaceae; Nitrincola
-345,NZ_CP023484,Dickeya sp. Secpp 1600,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Dickeya; unclassified Dickeya
-346,NZ_JNYC01000004,Streptomyces virginiae,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-347,NZ_GG657757.1,Streptomyces viridochromogenes DSM 40736,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-348,NZ_ORZE01000263.1,Xanthomonas fragariae,Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
-349,NC_003317.1,Brucella melitensis bv. 1 str. 16M,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
-350,HG530068,Pseudomonas aeruginosa PA38182,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
-351,CP004005,Candidatus Liberibacter asiaticus str. gxpsy,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Liberibacter
-352,NC_012898,Aureococcus anophagefferens,Eukaryota; Sar; Stramenopiles; Pelagophyceae; Pelagomonadales; Aureococcus
-353,CP012598,Salmonella enterica subsp. enterica serovar Newport,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
-354,NZ_GG657745.1,Streptomyces sp. SPB78,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-355,NC_010554.1,Proteus mirabilis HI4320,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Proteus
-356,NC_009785.1,Streptococcus gordonii str. Challis substr. CH1,Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
-357,NZ_RQHA01000004.1,Leptospira biflexa,Bacteria; Spirochaetes; Leptospirales; Leptospiraceae; Leptospira
-358,NZ_BEWM01000001.1,Gluconobacter cerinus,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Acetobacteraceae; Gluconobacter
-359,NZ_CP022580.1,Gordonia rubripertincta,Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
-360,NZ_LPTR01000009.1,Shigella boydii,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Shigella
-361,NZ_CP007601.1,Staphylococcus capitis subsp. capitis,Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
-362,NZ_LR134326.1,Bordetella bronchiseptica,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Bordetella
-363,NZ_NKWY01000001.1,Aeromonas media,Bacteria; Proteobacteria; Gammaproteobacteria; Aeromonadales; Aeromonadaceae; Aeromonas
-364,NZ_ADEZ01000001.1,Brucella inopinata BO1,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
-365,NZ_LT629739,Brevibacterium sandarakinum,Bacteria; Actinobacteria; Micrococcales; Brevibacteriaceae; Brevibacterium
-366,NZ_CP009467.1,Vibrio harveyi,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
-367,NZ_JYBE02000001.1,Streptomyces griseus,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-368,CP002453,Cellulophaga algicola DSM 14237,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga
-369,AE000666,Methanothermobacter thermautotrophicus str. Delta H,Archaea; Euryarchaeota; Methanomada group; Methanobacteria; Methanobacteriales; Methanobacteriaceae; Methanothermobacter
-370,NZ_GG657757,Streptomyces viridochromogenes DSM 40736,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-371,NZ_AOLR01000018,Haloarcula sinaiiensis ATCC 33800,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Halobacteriales; Haloarculaceae; Haloarcula
-372,NZ_CP018725.1,Xanthomonas vesicatoria ATCC 35937,Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
-373,NZ_KN046823,Brucella abortus 2308,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
-374,NZ_CADIKU010000001.1,Achromobacter animicus,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Achromobacter
-375,NZ_QKZO01000001.1,Rhodobacter capsulatus,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Rhodobacter
-376,CP001932,Natrialba magadii ATCC 43099,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Natrialbales; Natrialbaceae; Natrialba
-377,NZ_LR215047.1,Mycoplasma arthritidis,Bacteria; Tenericutes; Mollicutes; Mycoplasmataceae; Mycoplasma
-378,NZ_CP023643.1,Brochothrix thermosphacta,Bacteria; Firmicutes; Bacilli; Bacillales; Listeriaceae; Brochothrix
-379,NC_023543,Damaliscus lunatus,Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Alcelaphinae; Damaliscus
-380,NZ_GG657753.1,Streptomyces sp. C,Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
-381,NZ_CP046062.1,Leuconostoc mesenteroides subsp. mesenteroides,Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Leuconostoc
-382,NC_008261.1,Clostridium perfringens ATCC 13124,Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
-383,NZ_CP027407.1,Roseobacter denitrificans,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Roseobacter
-384,NZ_CP029289,Acidianus brierleyi,Archaea; Crenarchaeota; Thermoprotei; Sulfolobales; Sulfolobaceae; Acidianus
-385,NZ_CP015121.1,Acinetobacter baumannii,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter; Acinetobacter calcoaceticus/baumannii complex
-386,NZ_MSEI01000003,Idiomarina sp. 5.13,Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Idiomarinaceae; Idiomarina
-387,NZ_BJMO01000001.1,Sinomonas atrocyanea,Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Sinomonas
-388,NC_004310.3,Brucella suis 1330,Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
-389,NZ_VDDD01000101.1,Paracoccus marcusii,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Paracoccus
-390,NZ_CP016990.1,Aeromonas hydrophila,Bacteria; Proteobacteria; Gammaproteobacteria; Aeromonadales; Aeromonadaceae; Aeromonas
-391,NC_005363.1,Bdellovibrio bacteriovorus HD100,Bacteria; Proteobacteria; Oligoflexia; Bdellovibrionales; Bdellovibrionaceae; Bdellovibrio
-392,CP018657,Salmonella enterica subsp. enterica serovar Enteritidis,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
-393,CP030026,Salmonella enterica subsp. diarizonae serovar 59:z10:-,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
-394,NZ_FODB01000122.1,Halomonas aquamarina,Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Halomonadaceae; Halomonas
-395,CP034692,Halorubrum sp. BOL3-1,Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria; Haloferacales; Halorubraceae; Halorubrum; unclassified Halorubrum
-396,NC_011852.1,Glaesserella parasuis SH0165,Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Glaesserella
-397,NZ_CP004353.1,Corynebacterium vitaeruminis DSM 20294,Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
-398,NZ_NUFU01000011.1,Bacillus megaterium,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
-399,NC_013716.1,Citrobacter rodentium ICC168,Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter
-400,NZ_LR131273.1,Tsukamurella paurometabola,Bacteria; Actinobacteria; Corynebacteriales; Tsukamurellaceae; Tsukamurella
-401,NZ_CP009764.1,Ralstonia solanacearum OE1-1,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Ralstonia
-402,CP004353,Corynebacterium vitaeruminis DSM 20294,Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
-403,NZ_CP012023.1,Celeribacter marinus,Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Celeribacter
-404,NZ_SJSX01000001.1,Aliivibrio fischeri,Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Aliivibrio
-405,NZ_LN831039.1,Mycolicibacterium smegmatis,Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
-406,NZ_CP029614.1,Lactobacillus johnsonii,Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
-407,NZ_CP009610.1,Haemophilus influenzae,Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Haemophilus
-408,NC_017379.1,Helicobacter pylori Puno135,Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales; Helicobacteraceae; Helicobacter
+NZ_LN831039.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
+LC361338, Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Arthrobacter
+NZ_PKRZ01000001.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Lactococcus
+NC_006085.1, Bacteria; Actinobacteria; Propionibacteriales; Propionibacteriaceae; Cutibacterium
+NZ_JYBE02000001.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+HG530068, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+CP019892, Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
+NZ_KZ846072.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae; Enterococcus
+NZ_CP023560, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+QLNP01000098, Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Arthrobacter
+CP030026, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+NZ_CP015121.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter; Acinetobacter calcoaceticus/baumannii complex
+NZ_AP014524.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_CP022580.1, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+NC_012490.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
+NC_013961.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
+NZ_CP053931.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
+NZ_LT629770, Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
+JTHH01000008, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
+NZ_CP009764.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Ralstonia
+NZ_CP041040.1, Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
+NZ_CM000747.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
+NZ_CP009976.1, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga
+NZ_CM001889, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP019687.1, Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Paenibacillus
+NZ_CP031781.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_FEBQ01000001.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NC_005042.1, Bacteria; Cyanobacteria; Synechococcales; Prochloraceae; Prochlorococcus
+NZ_UWXU01000001, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella
+NZ_CP027107.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Cronobacter
+NZ_CP011007.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
+NZ_CP019870.1, Bacteria; Firmicutes; Clostridia; Clostridiales; Peptostreptococcaceae; Clostridioides
+CP027029, Bacteria; Firmicutes; Bacilli; Bacillales; Listeriaceae; Listeria
+NZ_OCQN01000001, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+CP020809, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium
+NZ_CP029197.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP016990.1, Bacteria; Proteobacteria; Gammaproteobacteria; Aeromonadales; Aeromonadaceae; Aeromonas
+NC_008261.1, Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
+NZ_CP035306.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_NQCD01000010.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Shigella
+NZ_CP010341.1, Bacteria; Actinobacteria; Propionibacteriales; Propionibacteriaceae; Propionibacterium
+NZ_CP009125.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Pectobacterium
+AP014565, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+FN554889, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP035288.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+NZ_CP024819.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter; Citrobacter freundii complex
+NZ_NUFU01000011.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
+NZ_CP008880.1, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Flavobacterium
+NZ_CP030105.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactiplantibacillus
+NC_010554.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Proteus
+NZ_MUTR01000001.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
+NZ_BAOP01000115.1, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+NC_011071.1, Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Stenotrophomonas; Stenotrophomonas maltophilia group
+MTKC01000003, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP048408.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+NZ_CP050013.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Serratia
+NC_017168.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
+NZ_MWMD01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
+CP004353, Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
+NZ_CWGL01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
+NC_021505.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+LT708304.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium tuberculosis complex
+NZ_CP027793.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
+NZ_GG657757, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NC_021883.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Mannheimia
+NZ_CP021654.1, Bacteria; Proteobacteria; Gammaproteobacteria; Aeromonadales; Aeromonadaceae; Aeromonas
+NZ_CP010450.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NC_022112.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lacticaseibacillus
+NZ_CP042449.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_MIGA01000001, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_AP019750.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
+CP032788, Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
+NZ_CP046062.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Leuconostoc
+NZ_CP025545.1, Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Brevibacillus
+NZ_CP025774.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Achromobacter
+NC_004557.1, Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
+NZ_CP034148.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Pantoea; Pantoea agglomerans group
+CP014475, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
+NZ_CP030777.1, Bacteria; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Faecalibacterium
+NC_012924.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_CP045235.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
+NZ_RPMX01000001.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Sinorhizobium/Ensifer group; Sinorhizobium
+NZ_CP032788.1, Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
+CP023315, Bacteria; Proteobacteria; Alphaproteobacteria; Caulobacterales; Caulobacteraceae; Caulobacter
+NZ_QLMF01000001.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Rhizobium
+NZ_CP015137.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Dickeya
+NZ_CP008781.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; pseudomallei group
+NZ_LK391965, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_CP039729.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae; Enterococcus
+NZ_LR134326.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Bordetella
+NC_007530.2, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
+NZ_BMUQ00000000.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP009467.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_LS483405.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Levilactobacillus
+AL645882, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces; Streptomyces albidoflavus group
+NVUC01000001, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Sulfitobacter
+NC_013716.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter
+NZ_QMJJ01000010.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Leuconostoc
+NC_012917.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Pectobacterium
+NZ_LPTR01000009.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Shigella
+NZ_CP031055.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NC_004556.1, Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xylella
+NZ_CM009828.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Hafniaceae; Edwardsiella
+NZ_JH603143.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella
+NZ_SGOE01000001.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Agrobacterium; Agrobacterium tumefaciens complex
+NZ_DF968533, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP028813.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Hafniaceae; Edwardsiella
+NC_003155.5, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_AEUD01000047.1, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+NZ_QKZO01000001.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Rhodobacter
+NZ_MDBB01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_AP012544.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lacticaseibacillus
+NZ_CP023558.1, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
+NC_006461.1, Bacteria; Deinococcus-Thermus; Deinococci; Thermales; Thermaceae; Thermus
+NC_017379.1, Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales; Helicobacteraceae; Helicobacter
+NZ_AP018203.1, Bacteria; Cyanobacteria; Synechococcales; Leptolyngbyaceae; Leptolyngbya
+NC_009952.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Dinoroseobacter
+NZ_QTTZ01000001, Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
+LR134359, Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales; Campylobacteraceae; Campylobacter
+NZ_BMTY00000000.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_LR134475.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella
+NZ_JNIU01000001, Bacteria; Proteobacteria; Alphaproteobacteria; Pelagibacterales; Pelagibacteraceae; Candidatus Pelagibacter
+NZ_CP004353.1, Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
+NZ_CP058243.1, Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
+NZ_CP023567.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
+NZ_CP027407.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Roseobacter
+NZ_FRBZ01000017.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Morganella
+NZ_LOQW01000006.1, Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
+NC_013198.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lacticaseibacillus
+NZ_CP029614.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
+NZ_MSJW02000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Shigella
+RKIY01000003, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
+NC_014965.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_CP017151.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Limosilactobacillus
+CP018363, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium avium complex (MAC)
+NZ_LXWL01000001.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Lactococcus
+NZ_GG657757.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+RXKE01000007, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+NZ_CP014324.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Oenococcus
+NC_017287.1, Bacteria; Chlamydiae; Chlamydiales; Chlamydiaceae; Chlamydia/Chlamydophila group; Chlamydia
+CP014518, Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Sinomonas
+NZ_CCKZ01000001, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+NZ_CP013237.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_PHHD01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+NZ_CP028926.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Pasteurella
+NZ_JH719383.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Rhizobium
+NZ_CP023643.1, Bacteria; Firmicutes; Bacilli; Bacillales; Listeriaceae; Brochothrix
+CM003594, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Psychrobacter
+NZ_CP009016.1, Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
+NZ_CP013197.1, Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
+NZ_KB849702.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter
+NC_005363.1, Bacteria; Proteobacteria; Oligoflexia; Bdellovibrionales; Bdellovibrionaceae; Bdellovibrio
+NC_007651.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; pseudomallei group
+NC_008530.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
+NZ_CP015750.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Pectobacterium
+NZ_LR134373.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
+NZ_CP008813.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NC_003317.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
+NZ_CP033732.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+NZ_MSEI01000003, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Idiomarinaceae; Idiomarina
+NZ_JAANOB010000217.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces; Streptomyces albidoflavus group
+NC_013929.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NC_013282.2, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Cronobacter
+NZ_FNLM01000034, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+NZ_CP012023.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Celeribacter
+NZ_CP035765.1, Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas
+NZ_CP039700.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+CP000388, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
+NZ_LR131273.1, Bacteria; Actinobacteria; Corynebacteriales; Tsukamurellaceae; Tsukamurella
+NZ_AMGI01000001.1, Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
+NZ_CP009977.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_CP007810.1, Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
+CP000031, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Ruegeria
+NZ_CP012958.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Aggregatibacter
+NZ_RQHA01000004.1, Bacteria; Spirochaetes; Leptospirales; Leptospiraceae; Leptospira
+NC_008390.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
+CP011132, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter
+NZ_FNSA01000003, Bacteria; Actinobacteria; Corynebacteriales; Tsukamurellaceae; Tsukamurella
+NZ_CP013992.1, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Flavobacterium
+CP001397, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Nonlabens
+CP018657, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+NC_007618.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
+NZ_VNGZ01000001.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Leuconostocaceae; Weissella
+NC_003228.3, Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides
+NVTK01000009, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
+CP011102, Bacteria; Firmicutes; Bacilli; Bacillales; Listeriaceae; Listeria
+CP002453, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga
+NZ_CP009610.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Haemophilus
+NC_007677.1, Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Salinibacter
+NC_009438.1, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Shewanellaceae; Shewanella
+NC_018681.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
+NZ_CM001153, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+NZ_QGLK01000001.1, Bacteria; Actinobacteria; Bifidobacteriales; Bifidobacteriaceae; Bifidobacterium
+NC_010163.1, Bacteria; Tenericutes; Mollicutes; Acholeplasmatales; Acholeplasmataceae; Acholeplasma
+AP014630, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter
+NZ_CP033724.1, Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Clavibacter
+CP012196, Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales; Campylobacteraceae; Campylobacter
+NZ_JAAXPD010000001.1, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+NZ_QEOC01000001.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
+NZ_LCZH01000038.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Delftia
+NZ_QANO01000198.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+CP012598, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+NZ_CP050956.1, Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Tannerellaceae; Parabacteroides
+NZ_CADIKU010000001.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Achromobacter
+NZ_BCTM01000001, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Kluyvera
+CP040255.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium avium complex (MAC)
+NZ_KE136308.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
+NZ_LS999521.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter; Acinetobacter calcoaceticus/baumannii complex
+NZ_CP018296.1, Bacteria; Chlamydiae; Chlamydiales; Chlamydiaceae; Chlamydia/Chlamydophila group; Chlamydia
+NC_013501.1, Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus
+NC_008752.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Acidovorax
+CP004005, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Liberibacter
+NZ_LN831027.1, Bacteria; Fusobacteria; Fusobacteriales; Fusobacteriaceae; Fusobacterium
+NZ_MDHN01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Alteromonadaceae; Alteromonas
+NZ_KB890221.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Rhizobium
+NZ_AWTB01000001.1, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+NZ_JXYE01000002, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Loktanella
+NZ_CP014955.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacteroides
+QOUU01000001, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
+NZ_CP045769.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
+CP025034, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Lelliottia
+NC_004310.3, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
+FP236843, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
+NZ_CP023484, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Dickeya; unclassified Dickeya
+NZ_KN046823, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
+NZ_CP013922.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+NZ_LT629758, Bacteria; Actinobacteria; Micromonosporales; Micromonosporaceae; Actinoplanes
+NZ_CP015286.1, Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Paenibacillus
+NZ_PKKP01000001.1, Bacteria; Actinobacteria; Actinomycetales; Actinomycetaceae; Actinomyces
+NZ_MUYO01000001.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_HF571038.1, Bacteria; Actinobacteria; Micrococcales; Intrasporangiaceae; Tetrasphaera
+CP034433, Bacteria; Proteobacteria; Betaproteobacteria; Neisseriales; Chromobacteriaceae; Iodobacter
+NZ_CP035780.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Photobacterium
+CP013913, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Serratia
+NZ_SPGG01000010.1, Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Tannerellaceae; Parabacteroides
+NZ_CP011028.1, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
+NZ_UGQI01000002.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
+NZ_AP022561.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
+NZ_VISK01000013.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Rhodospirillaceae; Azospirillum
+NZ_ADEZ01000001.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
+NC_016111.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP014474.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Serratia
+NZ_KV917376, Bacteria; Firmicutes; Bacilli; Bacillales; Sporolactobacillaceae; Sporolactobacillaceae incertae sedis
+NZ_BJNB00000000.1, Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
+NZ_LHAD01000001.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_CP047242.1, Bacteria; Cyanobacteria; Nostocales; Nostocaceae; Trichormus
+CP024902, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
+NZ_LT629739, Bacteria; Actinobacteria; Micrococcales; Brevibacteriaceae; Brevibacterium
+CP002293, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Geobacillus; unclassified Geobacillus
+NZ_SJSX01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Aliivibrio
+CP013614, Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae; Enterococcus
+NZ_WCFV01000001.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
+NZ_CP021140.1, Bacteria; Actinobacteria; Coriobacteriia; Eggerthellales; Eggerthellaceae; Eggerthella
+NZ_BEWM01000001.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Acetobacteraceae; Gluconobacter
+NZ_FNKM01000002.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+NZ_CP023691.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NC_008095.1, Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Cystobacterineae; Myxococcaceae; Myxococcus
+NC_017045.1, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Weeksellaceae; Riemerella
+NZ_AEZA01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+NZ_CP018809.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
+CP019236, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Rhodoferax
+NZ_LR134352.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
+NZ_UFTQ01000001, Bacteria; Actinobacteria; Micrococcales; Brevibacteriaceae; Brevibacterium
+NC_011852.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Glaesserella
+NZ_CH724157.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Roseovarius
+NZ_VDDD01000101.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Paracoccus
+NZ_CP032757.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactiplantibacillus
+NZ_CP007601.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+NZ_AP012555.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium avium complex (MAC)
+NZ_CP007203.1, Bacteria; Cyanobacteria; Nostocales; Aphanizomenonaceae; Nodularia
+NZ_LFTY01000002, Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Rhodobacter
+NZ_CP027738.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+NC_010103.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Brucellaceae; Brucella
+NZ_UFTQ01000003.1, Bacteria; Actinobacteria; Micrococcales; Brevibacteriaceae; Brevibacterium
+NZ_CP013187.1, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
+NZ_JACAWZ010000001.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Ralstonia
+NZ_MDFG01000001.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NVUT01000001, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Flavobacterium
+NZ_CP046672.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Raoultella
+NZ_CP050266.1, Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Salinivibrio
+NZ_PETF01000001, Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
+NZ_CP046058.1, Bacteria; Cyanobacteria; Oscillatoriophycideae; Chroococcales; Microcystaceae; Microcystis
+NZ_CP020567.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Kitasatospora
+NZ_CP024902.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
+NZ_KV917375.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
+NZ_NCUP01000009.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_CP041695.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
+CP020451, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_CP031422.1, Bacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Microbacterium
+NZ_CP010899.1, Bacteria; Tenericutes; Mollicutes; Entomoplasmatales; Spiroplasmataceae; Spiroplasma
+NZ_JMSZ01000016, Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Oceanospirillaceae; Nitrincola
+NZ_CP013990.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Leclercia
+CP003563, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Sinorhizobium/Ensifer group; Sinorhizobium
+SDYW01000001, Bacteria
+NZ_CP009460.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Dickeya
+NZ_MTKC01000002.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+CP004046, Bacteria; Actinobacteria; Corynebacteriales; Corynebacteriaceae; Corynebacterium
+NZ_FODB01000122.1, Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Halomonadaceae; Halomonas
+NC_012470.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+CP003488, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Providencia
+NC_006510.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Geobacillus; Geobacillus thermoleovorans group
+NZ_CM002803, Bacteria; Cyanobacteria; Oscillatoriophycideae; Oscillatoriales; Microcoleaceae; Planktothrix
+PEKX01000007, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+NC_015276.1, Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Oceanospirillaceae; Marinomonas
+NZ_ALPT02000001, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Alkalihalobacillus
+NZ_CP014135.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+NZ_CP011491.1, Bacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycolicibacterium
+NZ_ATTH01000001, Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Salisaeta
+NZ_ORZE01000263.1, Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
+NZ_LDUS01000001.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus
+NZ_CP006850.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Nocardia
+NZ_KB849641.1, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter
+NZ_CP023464.1, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas
+NC_022737.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+CP001751, Bacteria; Proteobacteria; Alphaproteobacteria; SAR116 cluster; Candidatus Puniceispirillum
+NZ_JYNI01000003, Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Thalassomonas
+CP029897, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+NZ_LR215047.1, Bacteria; Tenericutes; Mollicutes; Mycoplasmataceae; Mycoplasma
+NZ_MRCG01000001.1, Bacteria; Cyanobacteria; Oscillatoriophycideae; Oscillatoriales; Oscillatoriaceae; Phormidium
+NC_010694.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Erwinia
+NZ_ABJL02000008.1, Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides
+NZ_CP018725.1, Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Xanthomonas
+NC_017731.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Providencia
+NC_014159.1, Bacteria; Actinobacteria; Corynebacteriales; Tsukamurellaceae; Tsukamurella
+NZ_JYCD01000001.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Aeribacillus
+NZ_CP011663.1, Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
+NC_014925.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+NC_009785.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+CP017605, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; aphid secondary symbionts; Candidatus Hamiltonella
+NC_010002.1, Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Delftia
+NZ_CM000719.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
+NZ_LN854557.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Pectobacteriaceae; Sodalis
+NZ_LR134089.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+NZ_FLYG01000003, Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactiplantibacillus
+NZ_KK211277.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Alkalihalobacillus
+NZ_CP020822.1, Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Tenacibaculum
+NZ_CP046618.1, Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
+CP003184, Bacteria; Firmicutes; Clostridia; Thermoanaerobacterales; Thermoanaerobacterales Family III. Incertae Sedis; Thermoanaerobacterium
+NC_015601.1, Bacteria; Firmicutes; Erysipelotrichia; Erysipelotrichales; Erysipelotrichaceae; Erysipelothrix
+NZ_JNYC01000004, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP014170.1, Bacteria; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium
+NZ_LR594046.1, Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+NZ_CP033334.1, Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Phyllobacteriaceae; Mesorhizobium
+NZ_BJMO01000001.1, Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Sinomonas
+NC_002771.1, Bacteria; Tenericutes; Mollicutes; Mycoplasmataceae; Mycoplasma
+NZ_CP027114.1, Bacteria; Actinobacteria; Corynebacteriales; Gordoniaceae; Gordonia
+CP001713, Bacteria; Chlamydiae; Chlamydiales; Chlamydiaceae; Chlamydia/Chlamydophila group; Chlamydia
+NZ_NKWY01000001.1, Bacteria; Proteobacteria; Gammaproteobacteria; Aeromonadales; Aeromonadaceae; Aeromonas
+NZ_BBQG01000095.1, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_CP032675.1, Bacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus
+MH400164, Bacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces
+NZ_SAUP01000001, Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+NZ_CP013911.1, Bacteria; Firmicutes; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+NZ_RCTK01000001.1, Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Geobacillus
